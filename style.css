@@ -1,0 +1,89 @@
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #43155e;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.3s;
+}
+
+.keyboard__output {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.span__comment {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboard__keys {
+    text-align: center;
+
+}
+
+.keyboard__key {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.keyboard__key:active {
+    background: rgba(255, 255, 255, 0.3);
+
+}
+
+.keyboard__key_active{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.keyboard__key_wide {
+    width: 12%;
+}
+
+.keyboard__key_space {
+    width: 38%;
+    max-width: 700px;
+}
+
+.keyboard__key_dark {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.keyboard__key_activatable::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key_capslock_down::after {
+    background: #49fd42;
+}
