@@ -26,7 +26,7 @@ const keyboard = {
 
         this.elements.span = document.createElement("span");
         this.elements.span.classList.add("span__comment");
-        this.elements.span.innerHTML = 'Клавиатура была сделана на Mac OS. Сочетание клавиш для переключения языка: Shift+Space.';
+        this.elements.span.innerHTML = 'To change language press: Shift+Space.';
         // this.elements.span.createDocumentFragment('comment');
 
 
